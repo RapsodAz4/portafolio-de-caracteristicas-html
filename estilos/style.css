@@ -2,9 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root{
-    --color-primario: #FFF8DB;
-    --color-secundario:#96C9F4; 
-    --color-terciario: #3FA2F6;
+    --color-primario: #a00c39;
+    --color-secundario:#e4ecf3; 
+    --color-terciario: #9db0c0;
 
     --fuente-montserrat:'Montserrat', sans-serif;
     --fuente-krona:'Krona One', sans-serif;
@@ -25,24 +25,35 @@ body {
     
 }
 
-.header{
-    padding:2% 0% 0% 10% ;
-
+.header {
+    padding: 2% 0% 0% 10%;
+    border-radius: 15px;
+    background-color: #a11644; /* Color de fondo */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
 }
 
-.header--menu{
+.header--menu {
     display: flex;
     gap: 80px;
-
+    align-items: center; /* Centrar verticalmente */
 }
 
-.header-menu-link{
+.header-menu-link {
     font-family: var(--fuente-montserrat);
     font-size: 1.5rem;
     font-weight: 600;
-    color:var(--color-terciario);
+    color: var(--color-terciario);
     text-decoration: none;
+    padding: 15px 20px; /* Ajustar el padding */
+    border-radius: 10px;
+    transition: background-color 0.3s, color 0.3s; /* Transición suave */
 }
+
+.header-menu-link:hover {
+    background-color: var(--color-hover); /* Color de fondo al pasar el ratón */
+    color: var(--color-blanco); /* Color del texto al pasar el ratón */
+}
+
 
 
 
